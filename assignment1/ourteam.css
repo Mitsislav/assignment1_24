@@ -1,0 +1,43 @@
+.gallery{
+    display: inline-block;              /* the photos appear next to each other*/
+    border: 1px solid hsl(0,0%,60%);  /* Add border */
+    margin: 5px;                        /* Add outer margin around gallery*/
+    width: 200px;                       /* sets the width of gallery */
+}
+
+.gallery .description{
+    padding: 10px;                      /* inner border for the description of the each image */
+    text-align: center;                 /* centers the text of description */
+}
+
+.gallery:hover{
+    border: 1px solid hsl(0,0%,10%); /* when the cursor goes over the photo, the photo goes dark*/
+}
+
+.gallery img{
+    width: 100%;                       /* sets that image will cover all the width of the container */
+    height: 200px;                     /* sets the height of each foto */
+}
+
+.container-btn {
+    background-color: rgb(0, 11, 128); /* sets the backround color of the botton*/
+    color:white;                       /* i thought that this sets the color of the text but not */
+    padding: 15px 30px;                  /* inner padding of the button */
+    font-size: 1.2rem;                   /* sets the font size of the botton text*/
+    border-radius: 50px;                 /* Rounding the corners of the button*/
+    transition: all 0.3s ease;           /* Add transition to the hover effects*/ 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);      /* Add shadow around the button */
+    margin-bottom: 5px;                               /* Outer margin at bottom of button*/
+    text-align: center;                              /* Centers the text of the button*/
+}
+  
+.container-btn:hover {
+    background-color: #574bff;                      /* changed color when the user hovers his cursor over the button */
+    transform: translateY(-3px);                      /* raising the button when the user hovers over it */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);      /* enhance the shadow when the user has his cursor over the button*/
+    color: #fff;                                   /* change the color of the text in the botton when his cursor is in the button*/
+}   
+
+.custom-btn{
+    color: white;                                   /* sets the color of the text inside the button */
+}

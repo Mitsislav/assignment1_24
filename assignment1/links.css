@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;         /* Sets the base font */
+}    
+
+.content{
+    display: grid;                          /* grid for placing text and videos */
+    grid-template-columns: 1fr 2fr;         /* Two columns: the first with a smaller width (1fr), the second with twice the width (2fr) */
+    gap: 20px;                              /* Space between grid elements*/
+    margin: 5px;                            /* Outer margin around the grid*/
+}
+    
+.text {
+    background-color: #f0f0f0;                 /* Light gray background color */
+    padding: 20px;                               /* Inner margin around text */
+    border-radius: 8px;                          /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow around the text*/
+}
+
+.video-container {
+    display: grid;                              /* It uses a grid to place the videos */
+    gap: 20px;                                  /* Gap between videos*/
+}
+    
+.video-item {
+    display: flex;                                  /* the video can fold up inside the container*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);     /* Shadow around videos*/
+    border-radius: 8px;                             /* Rounded corners for videos*/
+    overflow: hidden;                               /* Avoid overflow of the content outside the container*/
+}
+
+.content .text ul {
+    list-style-position: inside;                /* List bullets are placed inside the list content */
+    padding-left: 0;                            /* Remove internal padding on the left of the list*/
+    margin-left: 0;  }                          /* Remove outer margin on the left of the list */
+
+.content .text li {     
+    font-weight: bold;                          /* makes list items bold*/
+    color: #000000;                          /* sets the color of list items to black */
+}
+
+.right-corner {
+    left: 1010px;                               
+    top: 760px;                                 
+                                                /* the box with the mp3 and the facebook share link */
+    border: 15px solid rgb(0, 11, 128);       /* dark blue border*/
+    padding: 10px;                              /* internal padding for container */
+    margin:5px;                                 /* outer margin for container */
+    margin-right: 0px;                         
+    margin-top: -125px;                       
+    width: 20%;                               /* The box occupies 20% of the width */
+    float: right;                             /* set the container to the right side of the page  */
+    
+}
+
+.right-corner audio {
+    width: 100%;                               /* audio element occupies the entire width of the container */
+    margin-bottom: 10px;                       /* Add margin below audio*/
+}
+
+.right-corner a {
+    text-decoration: none;                 /* Remove underlining in links */
+    color: white;                        /* White text color for links */
+    font-weight: bold;                     /* Bold text for links */
+    background-color: #4267B2;           /* blue background (Facebook color) for the links*/
+    padding: 5px 10px;                     /* Add padding around link text */
+    border-radius: 5px;                    /* Rounded corners for links */
+}

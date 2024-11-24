@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;         /* the base font for the body of the page */
+}
+
+.main-content{
+    width: 80%;                             /* takes up 80% of the available space */
+    margin: 50px auto;                      /* Adds margin around the central content */
+    float:left;                             /* Placement of central content on the left */
+}
+
+.contact-box{
+    background: rgb(141, 157, 203);       /* Light blue background for the frame with the contact details */
+    display: flex;                          /* to place the form details and contact details */
+}
+
+.box-left{
+    flex-basis: 60%;                        /* Sets the left column to take up 60% of the available space */
+    padding: 40px 60px;                     /* sets padding inside the left column */
+}
+
+.box-right{
+    flex-basis: 40%;                        /* Sets the right column to take up 40% of the available space*/
+    padding: 40px;                          /* sets padding inside the right column */
+    background: rgb(0, 11, 128);          /* dark blue background for the right column */
+}
+
+h2{
+    margin-bottom: 10px;                    /* Space under each h2 heading */
+}
+
+.main-content h2{
+    text-decoration: underline;             /* Adds an underline to the h2 headings of the main content */
+}
+
+.main-content p{
+    margin-bottom: 40px;                    /* Adds space below the paragraph */
+}
+
+.input-raw{
+    display: flex;                          /* Uses flexbox to align input fields*/
+    justify-content: space-between;         /* Places input fields with a space between them */
+    margin-bottom: 10px;                    /* Adds space below each row of fields */
+}
+
+.input-raw .input-group{
+    flex-basis: 45%;                        /* each input field occupies 45% of the available space */
+    margin: 2px;                            /* space of 2px between input fields */
+}
+
+input{
+    width: 100%;                            /* width of the input fields takes up all the available space */
+    border: none;                           /* Removes the normal border */
+    border-bottom: 1px solid #ccc;        /* Adds a subtle border to the bottom */
+    outline: none;                          /* Removes the border when the field is selected */
+    padding-bottom: 5px;                    /* Adds internal padding to the bottom */
+}
+
+textarea{
+    width: 100;                             /* text field takes up the entire width */
+    border: 1px solid #ccc;               /* border around the textarea */
+    outline: none;                          /* Removes the border when selected */
+    padding: 10px;                          /* padding around the content of the textarea */
+    box-sizing: border-box;                 /* the padding and border are included in the total width */
+}
+
+label{
+    margin-bottom: 20px;                    /* Adds space below each label */
+    color: #1c00b5;                       /* Blue color for labels*/
+}
+
+button {
+    background-color: rgb(0, 11, 128);    /* Blue background for the button */
+    color: white;                         /* White text on the button */  
+    float: right;                           /* The button is placed on the right */
+    border:none;                            /* Removes border*/
+    cursor: pointer;                        /* Sets the button to be clickable */
+    height: 50px;                           /* Same height as textarea padding */
+    border-radius: 30px;                    /* Rounded corners for the button */
+    width: 100px;                           /* button width */
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);        /* shadow to the button */
+}
+
+button:hover {                                                                        
+    background-color: #800000;                              /* change color when button is on hover*/
+}   
+
+.box-right h3{
+    color: aliceblue;                                       /* Light blue text color for the right column */
+    font-weight: 600;                                         /* Bold text for titles */
+    margin-bottom: 30px;                                      /* Adds space below the headings in the right column */
+}
+.box-right table{
+    color: aliceblue;                                       /* Text color for the table content in the right column */
+}
+
+tr td{
+    padding-top: 20px;                                        /* Space above each line in the table */
+}

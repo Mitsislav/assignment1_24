@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif; /* Sets the page body font */
+    margin: 0px; /* Removes the default margins around the body */
+}
+
+header{
+    background-color:rgb(141, 157, 203);      /* Sets the background color of the heading */
+    font-family: 'Brush Script MT', cursive;    /* Sets the font of the heading */
+    color: rgb(0, 11, 128);                   /* Sets the color of the text in the heading */
+    padding: 25px;                              /* Adds padding around the header content */
+    text-align: center;                         /* Centers the header */
+}
+
+header h1{
+    font-size: 40px;                            /* Sets the font size of the heading */
+}
+
+.navbar{
+    background-color: rgb(0, 11, 128);        /* Sets background color of the navigation bar */
+    height: 50px;                               /* Sets the height of the navigation bar */
+}
+
+.navbar ul{
+    list-style-type: none;                      /* Removes bullet points */
+    padding: 0px;                               /* Removes the inner margin nav nav items */
+    margin: 0px;                                /* Removes the outer margin from nav items */
+    overflow: hidden;                           /* Prevents list items from overflowing from the nav bar */
+}
+
+.navbar a{
+    color: white;                           /* Sets the color of the text on the nav bar links */
+    text-decoration: none;                    /* Removes the underline from links */
+    padding: 15px;                            /* Adds an inner margin around the link text */
+    display: block;                           /* Sets the links to appear as a block covering the entire list space */
+    text-align: center;                       /* Centers link text */
+}
+
+.navbar a:hover{
+    background-color:  hsl(0, 1%, 27%);    /* that the link box turns black when the cursor moves up */
+}
+
+.navbar li{
+    float: left;                             /* extend the list to the left */
+}
+
+aside{
+    background-color: rgb(0, 11, 128);    /* sets the color of the block that includes my social media */
+    border: 5px solid white;              /* sets a border around the block aside with white color */
+    width: 20%;                             /* the percentage of width it occupies on the page */
+    float: right;                           /* Places the aside on the right side of the page*/
+    padding: 10px;                          /* Adds a 10px inner margin around the aside content */
+}
+
+aside h2{
+    color: white;                        /* Sets the color of the header in aside box white */
+}
+
+section{
+    width: 40%;                            /* the percentage of width it accupies on the page */
+    float: left;                           /* extends the section to the left side of the page */
+    padding: 10px;                         /* adds a 10px inner margin around the section content*/
+}
+
+section p{
+    font-family: Arial, Helvetica, sans-serif;  /* Sets the font for the paragraphs in the section */
+    font-weight: bold;                          /* Sets the text in paragraphs to be bold */
+}
+
+section h2{
+    text-shadow: 3px 3px 5px hsl(258, 80%, 43%);    /* Sets color shadow on the header of the section content */
+    text-align:center;                                /* Centers the header on the section content */
+    text-decoration:underline;                        /* Underlines the header of the section */
+}
+
+article{
+    width: 40%;                                       /* the percentage of width it accupies on the page */
+    float: left;                                      /* extends the article to the left side of the page */
+    padding: 10px;                                    /* adds a 10px iiner margin around the article content */
+}
+
+article p{
+    font-family: Arial, Helvetica, sans-serif;        /* Sets the font for paragraphs in article */
+    font-weight: bold;                                /* sets the text in paragraphs to be bold */
+}
+
+article h2{
+    text-shadow: 3px 3px 5px hsl(258, 80%, 43%);    /* Sets color shadow on the header of the section content */
+    text-align:center;                                /* Centers the header on the section content */
+    text-decoration:underline;                        /* Underlines the header of the section */
+}
+
+footer{
+    display: block;                                           /* Defines the footer as a block element */
+    clear: both;                                              /* Clears the floats, ensuring that the footer appears below the other elements */
+    background-color: rgb(0, 11, 128);                      /* Sets the background color of the footer */
+    font-family :'Courier New', Courier, monospace;           /* Sets the font family of the footer */
+    color: rgb(255, 255, 255);                              /* Sets the color of the text in the footer */
+    padding: 25px;                                            /* Adds padding around the footer content */   
+    text-align: left;                                         /* Defines that the footer text is align to the left */
+}
+
+@media screen and (max-width:600px){                /* when the screen width is less than 600px, the aside, section and article elements will occupy 100% of the width*/
+    aside, section , article{                       
+        width: 100%;                                
+    }
+}
